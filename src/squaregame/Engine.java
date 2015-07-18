@@ -96,7 +96,7 @@ public class Engine extends JComponent implements ActionListener, MouseListener 
         //grounded = false;
         squareY -= jumpSize;
         grounded = false;
-        repaint();
+        repaint();//Repaints duh
     }
 
     @Override
