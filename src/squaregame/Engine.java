@@ -1,7 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* 
+ * Copyright (C) 2018 Mo
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package squaregame;
 
@@ -22,7 +33,9 @@ import javax.swing.JApplet;
 import javax.swing.JComponent;
 
 /**
+ * A simple game engine using the Java Swing Toolkit
  *
+ * @version 0.1.0
  * @author Mo
  */
 public class Engine extends JComponent implements ActionListener, MouseListener {
@@ -37,15 +50,14 @@ public class Engine extends JComponent implements ActionListener, MouseListener 
     private int jumpSize = 70;
 
     private Image bg;
-    private int bgX = 0;    //background x value
+    private int bgX = 0;
     private int bgY = 201;
 
     private AudioClip jump;
-    
 
-    private int num = 0;//onground
-    private int num2 = 0;//off ground
-
+    /**
+     * Loads assets from default directory
+     */
     public Engine() {
         try {
             bg = ImageIO.read(getClass().getResource("background2.png"));
@@ -67,7 +79,7 @@ public class Engine extends JComponent implements ActionListener, MouseListener 
         g2.fillRect(0, 0, 600, 600);
         //Draws our background tree
         g2.drawImage(bg, bgX, bgY, null);
-        System.out.println("bgX: " + bgX);
+//        System.out.println("bgX: " + bgX);
         if (bgX < -1200) {
             bgX = 465;
             //g2.drawImage(bg, bgX2, bgY, null);
@@ -80,7 +92,7 @@ public class Engine extends JComponent implements ActionListener, MouseListener 
         //Draws our square
         g2.setColor(Color.BLACK);
         g2.fillRect(squareX, squareY, squareSize, squareSize);
-        
+
         g2.dispose();
 
     }
@@ -114,7 +126,7 @@ public class Engine extends JComponent implements ActionListener, MouseListener 
             jump.play();
         }
 
-        repaint();//Repaints duh
+        repaint();//Repaints
     }
 
     @Override
