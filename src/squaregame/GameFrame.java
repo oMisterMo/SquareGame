@@ -1,5 +1,5 @@
 /* 
- * Copyright (C) 2018 Mo
+ * Copyright (C) 2018 Mohammed Ibrahim
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ import javax.swing.Timer;
  * <p>
  *
  * @version 0.1.0
- * @author Mo
+ * @author Mohammed Ibrahim
  */
 public class GameFrame extends JFrame {
 

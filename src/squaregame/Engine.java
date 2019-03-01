@@ -1,5 +1,5 @@
 /* 
- * Copyright (C) 2018 Mo
+ * Copyright (C) 2018 Mohammed Ibrahim
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -36,7 +36,7 @@ import javax.swing.JComponent;
  * A simple game engine using the Java Swing Toolkit
  *
  * @version 0.1.0
- * @author Mo
+ * @author Mohammed Ibrahim
  */
 public class Engine extends JComponent implements ActionListener, MouseListener {
 
