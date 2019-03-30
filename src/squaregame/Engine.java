@@ -33,7 +33,7 @@ import javax.swing.JApplet;
 import javax.swing.JComponent;
 
 /**
- * A simple game engine using the Java Swing Toolkit
+ * A simple game engine using the Java Swing Toolkit.
  *
  * @version 0.1.0
  * @author Mohammed Ibrahim
@@ -56,16 +56,16 @@ public class Engine extends JComponent implements ActionListener, MouseListener 
     private AudioClip jump;
 
     /**
-     * Loads assets from default directory
+     * Loads assets from the default directory.
      */
     public Engine() {
         try {
             bg = ImageIO.read(getClass().getResource("background2.png"));
+            jump = JApplet.newAudioClip(getClass().getResource("jump.wav"));
         } catch (IOException ex) {
             Logger.getLogger(Engine.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        jump = JApplet.newAudioClip(getClass().getResource("jump.wav"));
     }
 
     //FOR DRAWING
@@ -94,7 +94,6 @@ public class Engine extends JComponent implements ActionListener, MouseListener 
         g2.fillRect(squareX, squareY, squareSize, squareSize);
 
         g2.dispose();
-
     }
 
     //FOR MOVEMENT

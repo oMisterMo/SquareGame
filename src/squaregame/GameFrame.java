@@ -20,7 +20,7 @@ import javax.swing.JFrame;
 import javax.swing.Timer;
 
 /**
- * Window which the game is rendered to
+ * Window which the game is rendered to.
  * <p>
  *
  * @version 0.1.0
@@ -32,12 +32,12 @@ public class GameFrame extends JFrame {
      * Constructs a JFrame window
      */
     public GameFrame() {
-        super("Awsome Game");
+        super("Awesome Game");
 //        makeFrame();
     }
 
     /**
-     * Initialises and creates a new game instance
+     * Initialises and creates a new game instance.
      */
     public void makeFrame() {
         Engine e = new Engine();
