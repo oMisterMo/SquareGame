@@ -5,11 +5,15 @@ A very simple game where you control a square using the mouse. The game uses the
 
 ## Demo
 
-//Screenshots here
+![Square Game](https://i.imgur.com/DBuWEqt.png)
 
 ## Controls
 
  - <kbd>Mouse  1 </kbd> to jump
+
+## Requirements
+- Ant 1.8.0 or higher
+-  JDK 7 or higher
 
 ## Usage
 
@@ -18,16 +22,14 @@ There are no dependencies for this project so simply clone the repository to you
 ```sh
 $ git clone https://github.com/oMisterMo/SquareGame.git
 ```
+<code>$ cd</code>  into SquareGame
 
-Build and run to execute.
+Finally, build and run with the following command to execute the program:
 
-## Info
-
-| Mo Pc |  Specification |
-|--|--|
-| IDE |  NetBeans IDE 7.4 |
-| Java JDK | Java SE 7, 64 bit |
-| System | Windows 7 |
+```sh
+$ ant compile
+$ ant run
+```
 
 ## License
 
